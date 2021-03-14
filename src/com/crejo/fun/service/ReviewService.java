@@ -35,7 +35,7 @@ public class ReviewService {
                 Review review = new Review(user, movie, rating);
                 reviewRepository.save(review);
                 System.out.println(review.toString());
-                UserService.upgradeUserLevelIfApplicable(user);
+                UserService.changeUserLevelIfApplicable(user);
                 return review;
             }
         } catch (Exception e){

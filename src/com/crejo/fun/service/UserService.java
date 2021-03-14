@@ -49,7 +49,7 @@ public class UserService {
      *
      * @param user
      */
-    public static void upgradeUserLevelIfApplicable(User user){
+    public static void changeUserLevelIfApplicable(User user){
         List<Review> reviews = ReviewService.getReviewsAddedByUser(user);
         Level applicableUserLevel = null;
         int reviewsAddedCount = reviews.size();
