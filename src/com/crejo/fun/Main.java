@@ -51,7 +51,7 @@ public class Main {
         System.out.println();
         String genre = "Romance";
         int topNMoviews = 2;
-        System.out.println("Printing top "+ topNMoviews + " of genre: " + genre + " by critic reviewers");
+        System.out.println("Printing top "+ topNMoviews + " movies of genre: " + genre + " by critic reviewers");
         ReviewService.getTopMoviesByCritics(genre, topNMoviews);
 
     }
